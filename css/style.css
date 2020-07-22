@@ -46,6 +46,7 @@ ul {
     min-height: 400px;
     background: transparent;
 }
+
 /* TYPOGRAPHY
 ================================ */
 .nav-list a {
@@ -56,8 +57,12 @@ ul {
 .nav-list a:focus {
 	color: #fff;
 }
-
-
+.home-contact a {
+  font-weight: 400;
+  line-height: 2.75;
+  text-align: left;
+  text-decoration: none;
+}
 .title {
   margin: 0;
   font-size: 3.5rem;
@@ -233,7 +238,7 @@ h2 {
   }
 }
 .contact-desc {
-  font-size: .8rem;
+  font-size: 1rem;
   color: #fff;
   text-decoration: none;
 }
@@ -244,16 +249,9 @@ h2 {
 }
 .contact-social {
   font-weight: 400;
-  line-height: 2.5;
-  text-align: left;
+  line-height: 1.5;
+  text-align: left;  
 }
-.home-contact a {
-  font-weight: 400;
-  line-height: 2.5;
-  text-align: left;
-  text-decoration: none;
-}
-
 .contact-credits {
   font-weight: 400;
   line-height: 1.5;
@@ -261,12 +259,15 @@ h2 {
 }
 .REDES a {
   font-size: 1rem;
-  text-decoration: none;  
+  text-decoration: none;
+  line-height: 2.75;
+
 }
 .REDES-HOME a {
   font-size: 1rem;
   text-decoration: none;
   color: #fff;
+  line-height: 2.75;
 }
 .REDES-HOME:hover,
 .REDES-HOME:focus {
@@ -275,8 +276,8 @@ h2 {
 }
 .copyright {
   font-weight: 400;
-  line-height: 1.5;
-  text-align: left;
+  line-height: 2;
+  text-align: right;
   margin-top: 1rem;
   color: #ff293d;
 }
@@ -285,6 +286,21 @@ h2 {
   text-decoration: none;
   color: #fff;
 }
+.spaceBetween {
+	height: 2rem;
+	margin: 0;
+	padding: 0;
+}
+.spaceBetween2 {
+	height: 2.275rem;
+	margin: 0;
+	padding: 0;
+}
+.yellowText {
+	color: #ffac00;
+	font-size: 1.5rem;
+}
+
 /* LOADER
 ================================ */
 .spinner {
@@ -318,6 +334,7 @@ h2 {
   top: 0;
   z-index: 9999;
 }
+
 /* NAV
 ================================ */
 header {
@@ -351,7 +368,7 @@ nav a {
 nav a:hover,
 nav a:focus {
   color: #232323;
-  background: #ff293d;
+  background: #ffac00;
 }
 @media screen and (min-width: 630px) {
   nav a {
@@ -374,9 +391,9 @@ nav a:focus {
   z-index: 100000;
 }
 .hamburger {
-  background-image: url("../img/hamburger.png");
+  background-image: url("../img/hamburger.png");  
   background-position: center;
-  background-size: cover;
+  background-size: cover;  
   width: 2.75rem;
   height: 2.75rem;
   margin: 0;
@@ -431,17 +448,18 @@ nav a:focus {
     height: 6rem;
   }
 }
+
 /* HOME-HERO
 ================================ */
-.home-hero {
-  background-image: url("../img/portada-sch_1.jpg");
+.home-hero {  
+  background-image: url("../img/portada-sch_1.jpg");  
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
   position: relative;
-  min-height: 100vh;    
+  width: 100vw;
+  min-height: 100vh;  
 }
-
 .home-desc {
   color: white;
   padding: 0;
@@ -486,7 +504,7 @@ nav a:focus {
   margin: 0;
   color: white;
   background-color: #232323;
-  min-height: 75vh;
+  min-height: 100vh;
   width: 100vw;
   display: flex;
   align-items: center;
