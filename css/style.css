@@ -15,6 +15,7 @@ body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
   text-align: center;
+  width: 100vw;
 }
 img {
   max-width: 100%;
@@ -459,6 +460,14 @@ nav a:focus {
 
 /* LATEST WORK
 ================================ */
+.works {
+  background-color: #232323;
+  width: 100vw;
+  min-height: 30vh;
+  margin: 0;
+  padding: 0;
+  position: static;
+}
 .work-info2 p {
   margin: 0;
   padding: 0;
@@ -495,14 +504,7 @@ nav a:focus {
     font-size: 1.75rem;
   }
 }
-.works {
-  background-color: #232323;
-  width: 100vw;
-  min-height: 100vh;
-  margin: 0;
-  padding: 0;
-  position: static;
-}
+
 .work-info2 {
   position: relative;
   right: 5%;
@@ -600,8 +602,8 @@ figcaption {
   margin: 0;
   color: white;
   background-color: #232323;
-  min-height: 100vh;
-  width: 100%;
+  min-height: 75vh;
+  width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
