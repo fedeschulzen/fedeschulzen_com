@@ -10,12 +10,16 @@ html {
   scroll-behavior: smooth;
   transition-timing-function: ease-in-out;
   transition: 0.5s;
+  width: 100%;
+  height: 100%;
 }
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
   text-align: center;
   width: 100vw;
+  height: 100%;
+  overflow-x: hidden;  
 }
 img {
   max-width: 100%;
@@ -44,6 +48,16 @@ ul {
 }
 /* TYPOGRAPHY
 ================================ */
+.nav-list a {
+	text-decoration: none;
+	color: #fff;
+}
+.nav-list a:hover,
+.nav-list a:focus {
+	color: #fff;
+}
+
+
 .title {
   margin: 0;
   font-size: 3.5rem;
@@ -423,11 +437,8 @@ nav a:focus {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
-  position: relative; */
-  padding: 0;
-  min-height: 100vh;
-  text-decoration: none;
-  /* margin: 0; */
+  position: relative;
+  min-height: 100vh;    
 }
 
 .home-desc {
@@ -458,141 +469,15 @@ nav a:focus {
   margin: 0;
 }
 
-/* LATEST WORK
+/* REEL 2020
 ================================ */
-.works {
+.reel {
   background-color: #232323;
   width: 100vw;
-  min-height: 30vh;
+  min-height: 25vh;
   margin: 0;
   padding: 0;
   position: static;
-}
-.work-info2 p {
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-  color: #ffac00;
-  text-align: right;
-  font-size: .75rem;
-  font-weight: 900;
-}
-.work-info2 a {
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-  color: #ffac00;
-}
-@media screen and (min-width: 630px) {
-  .work-info2 p {
-    font-size: 1rem;
-  }
-}
-@media screen and (min-width: 1000px) {
-  .work-info2 p {
-    font-size: 1.25rem;
-  }
-}
-
-@media screen and (min-width: 1920px) {
-  .work-info2 p {
-    font-size: 1.5rem;
-  }
-}
-@media screen and (min-width: 2200px) {
-  .work-info2 p {
-    font-size: 1.75rem;
-  }
-}
-
-.work-info2 {
-  position: relative;
-  right: 5%;
-  padding-top: 5%;
-  display: block;
-}
-.body-slider {
-  width: 100%;
-  margin: 0;
-  padding-top: 3.5rem;
-  padding-left: 15%;
-  padding-right: 15%;
-  justify-content: space-around;
-  align-items: center;
-}
-.sliders {
-  position: static;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
-  align-items: flex-start;
-  margin: 0;
-}
-.caja-slider {
-  position: static;
-  height: auto;
-  padding-bottom: 3.5rem;
-}
-.caja-slider-img-container {
-  position: relative;
-  padding-bottom: 100%;
-}
-.caja-slider-img {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-size: cover;
-  background-position: center;
-}
-.img-work {
-  /* width: 100%;
-  height: auto; */
-  filter: grayscale(100%);
-}
-.img-work:hover ,
-.img-work:focus {
-  filter: grayscale(0%);
-}
-figcaption {
-  color: white;
-  font-weight: 900;
-  font-size: 1rem;
-  line-height: 1;
-  text-align: left;
-  transform: translateY(.5rem);
-}
-.fig-year {
-  font-weight: 400;
-  font-style: italic;
-  font-size: .75rem;
-  height: 44px;
-  overflow: hidden;
-}
-@media (min-width: 630px) {
-  figcaption {
-    font-size: 1.25rem;
-  }
-  .fig-year {
-    font-size: .9rem;
-  }
-}
-@media (min-width: 1000px) {
-  figcaption {
-    font-size: 1.5rem;
-  }
-  .fig-year {
-    font-size: 1.1rem;
-  }
-}
-@media (min-width: 1920px) {
-  figcaption {
-    font-size: 1.75rem;
-  }
-  .fig-year {
-    font-size: 1.25rem;
-  }
 }
 
 /* ABOUT
@@ -802,54 +687,4 @@ figcaption {
   .nav-is-open nav {
     transform: translateY(51.325rem);
   }
-}
-/* EXPERIENCE */
-
-.exp-bg {
-  min-height: 100vh;
-  width: 100vw;
-  background-image: url('../img/exp-background.jpg');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin: 0;
-  padding: 0;
-}
-.exp-info {
-  position: relative;
-  right: 5%;
-  padding-top: 5%;
-}
-.exp-info a {
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-  color: #ffac00;
-}
-.exp-cont-all {
-  height: 70%;
-  width: 95%;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-}
-.exp-container {
-  background-color: #ff293d;
-  mix-blend-mode: multiply;
-  margin-top: 4rem;
-  height: 95%;
-  width: 50%;
-  overflow: scroll;
-}
-.exp-list {
-  margin: 3rem;
-  color: white;
-  mix-blend-mode: normal;
-  font-weight: 900;
-  text-align: left;
-  font-size: 2rem;
-}
-.exp-item {
-  margin: 2rem;
-  padding: 2rem;
 }
