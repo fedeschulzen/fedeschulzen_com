@@ -13,9 +13,9 @@ html {
 }
 body {
   margin: 0;
-  font-family: 'Roboto', sans-serif;
-  text-align: center;
+  font-family: 'Roboto', sans-serif;  
   overflow-x: hidden;  
+  background: transparent;
 }
 img {
   max-width: 100%;
@@ -452,8 +452,9 @@ nav a:focus {
 /* HOME-HERO
 ================================ */
 .home-hero {  
-  background-image: url("../img/portada-sch_1.jpg");  
+  /*background-image: url("../img/portada-sch_1.jpg");*/  
   background-repeat: no-repeat;
+  background: transparent;
   background-size: cover;
   background-position: top;
   position: relative;
@@ -507,6 +508,7 @@ nav a:focus {
   min-height: 100vh;
   width: 100vw;
   display: flex;
+  text-align: center;
   align-items: center;
   justify-content: center;
 }
@@ -573,7 +575,8 @@ nav a:focus {
 .contact {
   margin: 0;
   padding: 0;
-  background-image: url("../img/contact_1.jpg");
+  /*background-image: url("../img/contact_1.jpg");*/
+  background: transparent;
   background-size: cover;
   background-position: center;
   min-height: 100vh;
